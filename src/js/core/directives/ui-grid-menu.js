@@ -66,6 +66,7 @@ function ($compile, $timeout, $window, $document, gridUtil, uiGridConstants, i18
 
     // *** Show/Hide functions ******
       $scope.showMenu = function(event, args) {
+        event.preventDefault(); //Prevent scroll to top
         if ( !$scope.shown ){
 
           /*
